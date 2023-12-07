@@ -36,7 +36,7 @@ export default {
                 <div class="image">
                     <img :src="buy.img" :alt="text">
                 </div>
-                <h6>{{ buy.text }}</h6>
+                <p>{{ buy.text }}</p>
             </li>
         </ul>
     </div>
@@ -46,9 +46,10 @@ export default {
 @use '../style.scss' as *;
 
 .cont {
-    background-color: #0282f9;
-    padding: 20px;
+    background-color: $color-banner;
+    padding: 50px 20px;
     text-transform: uppercase;
+    color: white;
 }
 
 ul {

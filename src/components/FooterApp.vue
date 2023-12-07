@@ -120,7 +120,7 @@ ul li.title {
 /* footer bottom */
 .footer-bottom {
     text-transform: uppercase;
-    background-color: #303030;
+    background-color: $color-footer-bottom;
 }
 
 .footer-bottom ul {
@@ -132,14 +132,29 @@ ul li.title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px 0;
     max-width: $width-lg;
     margin: 0 auto;
+}
+
+button {
+    padding: 10px 15px;
+    border: 2px solid $color-banner;
+    background-color: $color-footer-bottom;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .icon {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.icon {
+    h3 {
+        color: $color-banner;
+    }
 }
 </style>
