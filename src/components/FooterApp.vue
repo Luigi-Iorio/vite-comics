@@ -83,7 +83,7 @@ export default {
 .cont-bg {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: $width-lg;
     max-height: 370px;
@@ -95,66 +95,74 @@ export default {
     color: #878869;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 500px;
+    margin-top: 35px;
+    max-width: 400px;
     height: 100%;
-    padding: 50px 0;
+    gap: 30px;
+
+    ul {
+        height: 200px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        li.title {
+            color: white;
+            font-weight: bold;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+    }
+
 }
 
-ul {
-    margin-right: 10px;
-}
-
-ul li.title {
-    color: white;
-    font-weight: bold;
-    font-size: 26px;
-    text-transform: uppercase;
+ul:nth-last-of-type(3) {
+    order: 1;
 }
 
 .logo {
     width: 50%;
+    align-self: center;
 }
 
 /* footer bottom */
 .footer-bottom {
     text-transform: uppercase;
     background-color: $color-footer-bottom;
-}
 
-.footer-bottom ul {
-    display: flex;
-    gap: 10px;
-}
+    ul {
+        display: flex;
+        gap: 10px;
+    }
 
-.footer-bottom .cont {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
-    max-width: $width-lg;
-    margin: 0 auto;
-}
+    .cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+        max-width: $width-lg;
+        margin: 0 auto;
+    }
 
-button {
-    padding: 10px 15px;
-    border: 2px solid $color-banner;
-    background-color: $color-footer-bottom;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+    button {
+        padding: 10px 15px;
+        border: 2px solid $color-banner;
+        background-color: $color-footer-bottom;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
 
-.icon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+    .icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
 
-.icon {
-    h3 {
-        color: $color-banner;
+        h3 {
+            color: $color-banner;
+        }
     }
 }
 </style>

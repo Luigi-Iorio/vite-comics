@@ -50,30 +50,30 @@ export default {
     padding: 50px 20px;
     text-transform: uppercase;
     color: white;
-}
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: $width-lg;
-    margin: 0 auto;
-    gap: 50px;
-}
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: $width-lg;
+        margin: 0 auto;
+        gap: 50px;
 
-li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
 
-.image {
-    width: 60px;
+            .image {
+                width: 60px;
 
-    & img {
-        width: 100%;
-        display: block;
+                & img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
     }
 }
 </style>
