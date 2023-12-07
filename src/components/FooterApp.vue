@@ -1,8 +1,14 @@
 <script>
-export default {}
+import BannerApp from './BannerApp.vue'
+export default {
+    components: {
+        BannerApp,
+    }
+}
 </script>
 
 <template>
+    <BannerApp />
     <h2>footer</h2>
 </template>
 
