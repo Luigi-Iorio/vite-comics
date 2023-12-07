@@ -27,7 +27,9 @@ export default {
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../style.scss' as *;
+
 header {
   padding: 20px;
   text-transform: uppercase;
@@ -38,7 +40,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: $width-lg;
   margin: 0 auto;
 
 }

@@ -18,4 +18,4 @@ export default {
   <FooterApp />
 </template>
 
-<style></style>
+<style lang="scss"></style>

@@ -42,7 +42,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../style.scss' as *;
+
 .cont {
     background-color: #0282f9;
     padding: 20px;
@@ -53,7 +55,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-width: 1200px;
+    max-width: $width-lg;
     margin: 0 auto;
     gap: 50px;
 }
@@ -67,10 +69,10 @@ li {
 
 .image {
     width: 60px;
-}
 
-.image img {
-    width: 100%;
-    display: block;
+    & img {
+        width: 100%;
+        display: block;
+    }
 }
 </style>

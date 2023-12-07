@@ -70,7 +70,9 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../style.scss' as *;
+
 /* footer top */
 .cont-links {
     background-image: url(/img/footer-bg.jpg);
@@ -83,7 +85,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: $width-lg;
     max-height: 370px;
     overflow: hidden;
     margin: 0 auto;
@@ -131,7 +133,7 @@ ul li.title {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    max-width: 1200px;
+    max-width: $width-lg;
     margin: 0 auto;
 }
 

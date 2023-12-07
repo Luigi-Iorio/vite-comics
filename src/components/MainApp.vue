@@ -10,14 +10,16 @@ export default {};
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../style.scss' as *;
+
 main {
     background-color: #1c1c1c;
     padding: 20px;
 }
 
 .cont {
-    max-width: 1200px;
+    max-width: $width-lg;
     margin: 0 auto;
 }
 
