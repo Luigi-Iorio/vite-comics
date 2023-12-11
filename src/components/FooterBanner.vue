@@ -67,10 +67,12 @@ export default {
 
             .image {
                 width: 60px;
+                height: 60px;
 
                 & img {
                     width: 100%;
-                    display: block;
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
         }
