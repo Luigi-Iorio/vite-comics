@@ -28,7 +28,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../style.scss' as *;
+@use '../assets/scss/partials/variables.scss' as *;
 
 header {
   padding: 20px;

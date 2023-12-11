@@ -43,7 +43,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../style.scss' as *;
+@use '../assets/scss/partials/variables.scss' as *;
 
 .cont {
     background-color: $color-banner;
