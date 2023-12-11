@@ -1,5 +1,5 @@
 <script>
-import BannerApp from './BannerApp.vue'
+import FooterBanner from './FooterBanner.vue'
 export default {
     data() {
         return {
@@ -28,7 +28,7 @@ export default {
         }
     },
     components: {
-        BannerApp,
+        FooterBanner,
     }
 }
 </script>
@@ -36,7 +36,7 @@ export default {
 <template>
     <footer>
         <!-- footer top -->
-        <BannerApp />
+        <FooterBanner />
         <div class="cont-footer">
             <div class="cont-links">
                 <div class="cont-bg">

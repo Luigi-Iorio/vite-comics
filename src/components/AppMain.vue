@@ -1,10 +1,10 @@
 <script>
-import ComicApp from './ComicApp.vue';
-import JumboApp from './JumboApp.vue';
+import MainComic from './MainComic.vue';
+import MainJumbo from './MainJumbo.vue';
 export default {
     components: {
-        ComicApp,
-        JumboApp,
+        MainComic,
+        MainJumbo,
     },
     data() {
         return {
@@ -89,9 +89,9 @@ export default {
 
 <template>
     <main>
-        <JumboApp />
+        <MainJumbo />
         <div class="cont">
-            <ComicApp v-for="comic in comics" :img="comic.thumb" :title="comic.series" />
+            <MainComic v-for="comic in comics" :img="comic.thumb" :title="comic.series" />
             <button>Load More</button>
         </div>
     </main>
