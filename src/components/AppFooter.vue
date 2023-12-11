@@ -86,7 +86,7 @@ export default {
     align-items: flex-start;
     justify-content: space-between;
     max-width: $width-lg;
-    max-height: 370px;
+    height: 370px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -96,22 +96,26 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 35px;
+    margin-top: 25px;
     max-width: 400px;
     height: 100%;
     gap: 30px;
 
     ul {
         height: 200px;
-        margin-right: 5px;
+        width: calc(100% / 3 - 30px);
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 3px;
+
+        li:not(title) {
+            font-size: 14px;
+        }
 
         li.title {
             color: white;
             font-weight: bold;
-            font-size: 26px;
+            font-size: 18px;
             text-transform: uppercase;
         }
     }
@@ -158,10 +162,16 @@ ul:nth-last-of-type(3) {
     .icon {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
 
         h3 {
             color: $color-banner;
+        }
+
+        a,
+        img {
+            display: block;
         }
     }
 }

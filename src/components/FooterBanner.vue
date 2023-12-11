@@ -23,10 +23,10 @@ export default {
                     img: "/img/buy-dc-power-visa.svg",
                     text: "dc power visa",
                 },
-            ]
-        }
-    }
-}
+            ],
+        };
+    },
+};
 </script>
 
 <template>
@@ -34,7 +34,7 @@ export default {
         <ul>
             <li v-for="buy in listBuy">
                 <div class="image">
-                    <img :src="buy.img" :alt="text">
+                    <img :src="buy.img" :alt="text" />
                 </div>
                 <p>{{ buy.text }}</p>
             </li>
@@ -43,7 +43,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../assets/scss/partials/variables.scss' as *;
+@use "../assets/scss/partials/variables.scss" as *;
 
 .cont {
     background-color: $color-banner;
@@ -75,5 +75,9 @@ export default {
             }
         }
     }
+}
+
+p {
+    font-size: 15px;
 }
 </style>
