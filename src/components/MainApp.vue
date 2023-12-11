@@ -92,6 +92,7 @@ export default {
         <JumboApp />
         <div class="cont">
             <ComicApp v-for="comic in comics" :img="comic.thumb" :title="comic.series" />
+            <button>Load More</button>
         </div>
     </main>
 </template>
@@ -108,6 +109,7 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 
     .card {
@@ -116,6 +118,16 @@ main {
         margin: 50px 15px 0 15px;
         gap: 20px;
         width: calc((100% / 6) - 30px);
+    }
+
+    button {
+        background-color: $color-banner;
+        color: white;
+        border: none;
+        margin: 50px 0 20px 0;
+        padding: 15px 60px;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 }
 
