@@ -1,6 +1,6 @@
 # Vite DC Comics
 
-### Descrizione
+### Descrizione - Parte 1
 
 Questo progetto è stato creato utilizzando Vite e Vue 3. L'obiettivo principale è implementare un layout strutturato secondo le specifiche fornite nello screenshot di riferimento.
 
@@ -10,4 +10,4 @@ Per migliorare la gestione dello stile e rendere il codice più organizzato è s
 
 ### Design di riferimento
 
-![Design di riferimento](public/img/dc-comics-empty-layout.png)
+![Design di riferimento](src/assets//img/dc-comics-empty-layout.png)
