@@ -4,7 +4,9 @@ export default {}
 
 <template>
     <div class="jumbo">
-        <h2>Current Series</h2>
+        <div class="cont">
+            <h2>Current Series</h2>
+        </div>
     </div>
 </template>
 
@@ -12,20 +14,26 @@ export default {}
 @use '../assets/scss/partials/variables.scss' as *;
 
 .jumbo {
-    position: relative;
     height: 400px;
     background-image: url(../assets/img/jumbotron.jpg);
     background-position: top;
     background-size: cover;
 
-    h2 {
-        padding: 15px 30px;
-        background-color: $color-banner;
-        position: absolute;
-        bottom: -30px;
-        left: 200px;
-        color: white;
-        text-transform: uppercase;
+    .cont {
+        position: relative;
+        width: $width-lg;
+        height: 100%;
+        margin: 0 auto;
+
+        h2 {
+            padding: 15px 30px;
+            background-color: $color-banner;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            color: white;
+            text-transform: uppercase;
+        }
     }
 }
 </style>
