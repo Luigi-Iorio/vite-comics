@@ -11,3 +11,20 @@ Per migliorare la gestione dello stile e rendere il codice più organizzato è s
 ### Design di riferimento
 
 ![Design di riferimento](src/assets//img/dc-comics-empty-layout.png)
+
+### Descrizione - Parte 2
+
+Nella seconda fase dello sviluppo del progetto, mi sono concentrato su due attività principali per migliorare la qualità e la struttura complessiva del codice:
+
+1. **Nuovi Componenti Aggiuntivi**:
+
+   - **MainComic**: Componente dedicato alla visualizzazione delle informazioni relative ai fumetti. Questo componente mira a migliorare l'esperienza visiva e la gestione dei dati dinamici
+
+   - **MainJumbo**: Componente progettato per la visualizzazione di un jumbotron
+
+2. **Refactor Generale**:
+   - È stato eseguito un refactor generale per semplificare la struttura del progetto. L'obiettivo è stato anche quello di agevolare la manutenzione futura del codice.
+
+### Design di riferimento
+
+![Design di riferimento](src/assets//img/dc-comics.png)
