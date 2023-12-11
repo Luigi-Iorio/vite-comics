@@ -1,8 +1,10 @@
 <script>
 import ComicApp from './ComicApp.vue';
+import JumboApp from './JumboApp.vue';
 export default {
     components: {
         ComicApp,
+        JumboApp,
     },
     data() {
         return {
@@ -87,6 +89,7 @@ export default {
 
 <template>
     <main>
+        <JumboApp />
         <div class="cont">
             <ComicApp v-for="comic in comics" :img="comic.thumb" :title="comic.series" />
         </div>
@@ -98,7 +101,6 @@ export default {
 
 main {
     background-color: #1c1c1c;
-    padding: 20px;
 }
 
 .cont {
@@ -111,7 +113,7 @@ main {
     .card {
         display: flex;
         flex-direction: column;
-        margin: 50px 15px;
+        margin: 50px 15px 0 15px;
         gap: 20px;
         width: calc((100% / 6) - 30px);
     }
