@@ -7,9 +7,16 @@ export default {
 }
 </script>
 <template>
-    <div>
-        <img :src="img" :alt="title">
+    <div class="card">
+        <div class="img-cont">
+            <img :src="img" :alt="title">
+        </div>
         <h3>{{ title }}</h3>
     </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.img-cont {
+    width: 180px;
+    height: 180px;
+}
+</style>

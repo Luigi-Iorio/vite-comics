@@ -18,6 +18,12 @@ a {
   color: currentColor;
 }
 
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 // common
 $width-lg: 1200px;
 $color-banner: #0282f9;

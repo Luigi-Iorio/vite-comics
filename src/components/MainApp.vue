@@ -104,9 +104,22 @@ main {
 .cont {
     max-width: $width-lg;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 15px;
+        gap: 20px;
+        width: calc((100% / 6) - 30px);
+    }
 }
 
 :deep(h3) {
     color: white;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 </style>
