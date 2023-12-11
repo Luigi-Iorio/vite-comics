@@ -23,7 +23,7 @@ export default {
             ],
             logo: "public/img/dc-logo-bg.png",
             social: [
-                "/img/footer-facebook.png", "/img/footer-twitter.png", "/img/footer-youtube.png", "/img/footer-pinterest.png", "/img/footer-periscope.png",
+                "src/assets/img/footer-facebook.png", "src/assets/img/footer-twitter.png", "src/assets/img/footer-youtube.png", "src/assets/img/footer-pinterest.png", "src/assets/img/footer-periscope.png",
             ]
         }
     },
@@ -75,7 +75,7 @@ export default {
 
 /* footer top */
 .cont-links {
-    background-image: url(/img/footer-bg.jpg);
+    background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
     background-size: cover;
 }

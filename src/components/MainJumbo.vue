@@ -14,7 +14,7 @@ export default {}
 .jumbo {
     position: relative;
     height: 400px;
-    background-image: url(/img/jumbotron.jpg);
+    background-image: url(../assets/img/jumbotron.jpg);
     background-position: top;
     background-size: cover;
 
